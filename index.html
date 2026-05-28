@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jokicoy - Solusi Joki Tugas Cepat dan Terpercaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar container">
+            <a class="logo logo-click" href="#home" aria-label="Jokicoy Home">
+                <img src="assets/jokicoy-logo.png" alt="Jokicoy">
+            </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#layanan">Layanan</a>
+                <a href="#keunggulan">Keunggulan</a>
+                <a href="#harga">Harga</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+            <a class="btn btn-small btn-glass" href="#kontak">Order</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero neon-hero" id="home">
+            <div class="hero-landscape" aria-hidden="true"></div>
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Jasa edukasi terpercaya</span>
+                    <h1>jokicoy</h1>
+                    <p class="hero-tagline">Solusi joki tugas cepat dan terpercaya untuk sekolah, kuliah, makalah, PPT, laporan, dan coding sederhana.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-pink" href="#kontak">Pesan Sekarang</a>
+                        <a class="btn btn-glass" href="#layanan">Lihat Layanan</a>
+                    </div>
+                </div>
+
+                <div class="hero-logo-stage" aria-label="Logo Jokicoy">
+                    <div class="brand-orbit"></div>
+                    <div class="hero-logo-card">
+                        <img class="hero-brand-logo logo-click" src="assets/jokicoy-logo.png" alt="Jokicoy - Joki Tugas & Layanan Cepat">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dark-section" id="layanan">
+            <div class="container">
+                <div class="section-title">
+                    <span>Layanan</span>
+                    <h2>Bantuan tugas sesuai kebutuhanmu</h2>
+                </div>
+                <div class="card-grid six">
+                    <article class="card"><h3>Tugas Sekolah</h3><p>Rangkuman, esai, latihan soal, dan tugas harian.</p></article>
+                    <article class="card"><h3>Tugas Kuliah</h3><p>Paper, review jurnal, riset ringan, dan laporan kelas.</p></article>
+                    <article class="card"><h3>Makalah</h3><p>Struktur lengkap, format rapi, dan referensi tertata.</p></article>
+                    <article class="card"><h3>PPT</h3><p>Slide presentasi bersih, ringkas, dan mudah dipahami.</p></article>
+                    <article class="card"><h3>Laporan</h3><p>Laporan praktikum, kegiatan, PKL, dan dokumentasi.</p></article>
+                    <article class="card"><h3>Coding Sederhana</h3><p>HTML, CSS, PHP, Java dasar, dan tugas pemrograman ringan.</p></article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section neon-band" id="keunggulan">
+            <div class="container">
+                <div class="section-title">
+                    <span>Keunggulan</span>
+                    <h2>Kenapa pesan di Jokicoy?</h2>
+                </div>
+                <div class="feature-list">
+                    <div>Cepat</div>
+                    <div>Rapi</div>
+                    <div>Aman</div>
+                    <div>Harga Terjangkau</div>
+                    <div>Bisa Revisi</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section dark-section" id="harga">
+            <div class="container">
+                <div class="section-title">
+                    <span>Harga</span>
+                    <h2>Paket fleksibel untuk berbagai deadline</h2>
+                </div>
+                <div class="pricing">
+                    <article class="price-card">
+                        <h3>Basic</h3>
+                        <strong>Mulai Rp25K</strong>
+                        <p>Untuk tugas ringan dengan deadline santai.</p>
+                    </article>
+                    <article class="price-card highlighted">
+                        <h3>Standard</h3>
+                        <strong>Mulai Rp50K</strong>
+                        <p>Untuk tugas menengah dengan detail lebih lengkap.</p>
+                    </article>
+                    <article class="price-card">
+                        <h3>Express</h3>
+                        <strong>Mulai Rp100K</strong>
+                        <p>Untuk deadline cepat dan prioritas pengerjaan.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section order-section" id="kontak">
+            <div class="container order-layout">
+                <div>
+                    <div class="section-title left">
+                        <span>Form Pesanan</span>
+                        <h2>Ceritakan tugas yang perlu dibantu</h2>
+                    </div>
+                    <p class="lead">Isi detail sejelas mungkin agar admin bisa memberi estimasi harga dan waktu pengerjaan yang pas.</p>
+                    <div class="free-api-note">Versi GitHub Pages memakai WhatsApp manual. Admin dan database berjalan di versi PHP hosting.</div>
+                </div>
+
+                <form class="order-form" data-whatsapp="6285893957454">
+                    <label>Nama
+                        <input type="text" name="name" required maxlength="100" placeholder="Nama kamu">
+                    </label>
+                    <label>WhatsApp
+                        <input type="text" name="whatsapp" required maxlength="20" placeholder="08xxxxxxxxxx">
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" maxlength="100" placeholder="nama@email.com">
+                    </label>
+                    <label>Jenis Tugas
+                        <input type="text" name="task_type" required maxlength="100" placeholder="Makalah, PPT, coding, dll">
+                    </label>
+                    <label>Jenjang
+                        <select name="education_level">
+                            <option value="sekolah">Sekolah</option>
+                            <option value="kuliah">Kuliah</option>
+                            <option value="umum" selected>Umum</option>
+                        </select>
+                    </label>
+                    <label>Deadline
+                        <input type="date" name="deadline" required>
+                    </label>
+                    <label>Budget
+                        <input type="number" name="budget" min="0" step="1000" placeholder="50000">
+                    </label>
+                    <label class="full">Catatan
+                        <textarea name="notes" rows="5" placeholder="Instruksi tugas, format file, jumlah halaman, dan detail lainnya"></textarea>
+                    </label>
+                    <button class="btn btn-pink full" type="submit">Kirim Pesanan</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">Copyright &copy; 2026 Jokicoy. All rights reserved.</div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
