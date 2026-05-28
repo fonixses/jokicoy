@@ -709,14 +709,31 @@ th {
 
 @media (max-width: 980px) {
     .navbar,
-    .nav-links,
     .admin-topbar {
-        align-items: flex-start;
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 12px;
+        overflow-x: auto;
+        padding-bottom: 4px;
+        scrollbar-width: none;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
     }
 
     .site-header {
-        position: absolute;
+        position: fixed;
+        background: rgba(3, 0, 20, 0.86);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(14px);
     }
 
     .hero-grid,
@@ -727,7 +744,7 @@ th {
     }
 
     .hero-logo-stage {
-        min-height: 330px;
+        min-height: 300px;
     }
 
     .card-grid.six,
@@ -742,12 +759,98 @@ th {
         width: min(100% - 28px, 1160px);
     }
 
+    .navbar {
+        min-height: 96px;
+        padding: 10px 0;
+    }
+
+    .logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .btn-small {
+        min-height: 34px;
+        padding: 0 14px;
+    }
+
+    .nav-links {
+        justify-content: flex-start;
+        gap: 10px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    .nav-links a {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 999px;
+        padding: 8px 10px;
+        background: rgba(255, 255, 255, 0.06);
+    }
+
     .hero {
-        padding-top: 190px;
+        min-height: auto;
+        padding: 142px 0 54px;
     }
 
     h1 {
-        font-size: 78px;
+        max-width: 100%;
+        font-size: clamp(54px, 18vw, 76px);
+        line-height: 0.95;
+        letter-spacing: -1px;
+        word-break: break-word;
+    }
+
+    h2 {
+        font-size: clamp(26px, 9vw, 34px);
+    }
+
+    .eyebrow,
+    .section-title span {
+        font-size: 10px;
+        letter-spacing: 1.4px;
+    }
+
+    .hero-tagline,
+    .lead {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .hero-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hero-actions .btn,
+    .order-form .btn {
+        width: 100%;
+    }
+
+    .hero-grid {
+        gap: 22px;
+    }
+
+    .hero-logo-stage {
+        min-height: 230px;
+    }
+
+    .brand-orbit {
+        width: min(82vw, 300px);
+    }
+
+    .hero-logo-card {
+        min-height: 210px;
+        width: 100%;
+    }
+
+    .hero-brand-logo {
+        width: min(78vw, 310px);
+    }
+
+    .section {
+        padding: 54px 0;
     }
 
     .card-grid.six,
@@ -757,6 +860,27 @@ th {
     }
 
     .hero-logo-card {
-        min-height: 260px;
+        min-height: 210px;
+    }
+
+    .card,
+    .price-card,
+    .order-form {
+        padding: 18px;
+    }
+
+    .order-form {
+        gap: 14px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+    }
+
+    .footer {
+        font-size: 13px;
+        line-height: 1.5;
     }
 }
